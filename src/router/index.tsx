@@ -1,14 +1,14 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import Home from "../pages/home/Home";
 import Asset from "../pages/asset/Asset";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
-    path: "/dportfolio",
+    path: "",
     element: <Home />,
   },
   {
-    path: "/dportfolio/project/asset",
+    path: "project/asset",
     element: <Asset />,
   },
 ]);

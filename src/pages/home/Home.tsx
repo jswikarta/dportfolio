@@ -33,7 +33,7 @@ const projects: ProjectType[] = [
     target: "",
     title: "Asset Management",
     image: "images/asset/login.png",
-    link: "/dportfolio/project/asset",
+    link: "/project/asset",
     skills: ["PHP", "Javascript", "CodeIgniter", "Bootstrap"],
     desc: "Website ini dirancang untuk membantu pengelolaan aset secara menyeluruh, mulai dari proses pengadaan, penempatan, hingga pemeliharaan aset. Sistem ini memudahkan pelacakan transaksi aset dan memastikan pengelolaan inventaris yang lebih efisien, transparan, dan terdokumentasi dengan baik.",
   },
