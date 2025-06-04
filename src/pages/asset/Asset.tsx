@@ -45,10 +45,7 @@ export default function Asset() {
     <>
       <div className="bg-[#0e162a]">
         <div className="fixed w-full bg-slate-900/90">
-          <Link
-            to={"/dportfolio"}
-            className="flex items-center px-6 py-2 text-white"
-          >
+          <Link to={"/"} className="flex items-center px-6 py-2 text-white">
             <KeyboardBackspaceOutlinedIcon className="mr-2" /> Back
           </Link>
         </div>
