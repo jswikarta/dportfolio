@@ -19,8 +19,11 @@ export default function Experience({ experienceData }: Props) {
           <p className="mb-2 text-sm text-[#94a3b8]">{experienceData.desc}</p>
 
           <div className="mt-2 flex flex-wrap gap-2">
-            {experienceData.skills.map((i) => (
-              <div className="rounded-xl bg-green-300/20 px-4 py-1 text-xs font-normal text-green-400">
+            {experienceData.skills.map((i, index) => (
+              <div
+                key={index}
+                className="rounded-xl bg-green-300/20 px-4 py-1 text-xs font-normal text-green-400"
+              >
                 {i}
               </div>
             ))}

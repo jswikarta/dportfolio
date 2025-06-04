@@ -3,6 +3,7 @@ import Experience from "./components/Experience";
 import type { ExperienceType } from "../../types/ExperienceType";
 import type { ProjectType } from "../../types/ProjectType";
 import Project from "./components/Project";
+import Sidebar from "../../components/Sidebar";
 
 const experiences: ExperienceType[] = [
   {
@@ -15,7 +16,7 @@ const experiences: ExperienceType[] = [
       "Abap Debugging",
       "Palm Oil Plantation",
     ],
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quos. Id dignissimos pariatur beatae eius quis quibusdam harum repellat ut voluptatem ipsum! Iure quas deleniti nesciunt id ut vel perferendis?",
+    desc: "Berpengalaman mengelola dan mengembangkan modul PAS (Plantation Application System) di SAP untuk mendukung operasional perkebunan. Menangani proses seperti aktivitas karyawan, penggajian, pembibitan, dan goods issue. Terlibat dalam pembuatan dokumen fungsional, pengujian sistem, serta implementasi SAP S/4HANA dari konfigurasi hingga go-live. Membantu meningkatkan efisiensi sistem melalui validasi dan perbaikan bug.",
   },
 
   {
@@ -23,58 +24,71 @@ const experiences: ExperienceType[] = [
     title: "Web Programmer",
     company: "Widi Center",
     skills: ["PHP", "MySQL", "HTML & CSS", "Javascript"],
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quos. Id dignissimos pariatur beatae eius quis quibusdam harum repellat ut voluptatem ipsum! Iure quas deleniti nesciunt id ut vel perferendis?",
+    desc: "Terlibat dalam pengembangan sistem secara menyeluruh, mulai dari desain, pemrograman frontend dan backend, hingga basis data. Menyelesaikan bug dan error pada website, serta melakukan update dan penambahan modul sesuai permintaan klien.",
   },
 ];
 
 const projects: ProjectType[] = [
   {
-    title: "Whatsapp Bot",
-    image: "/images/example.png",
-    link: "https://github.com/jswikarta/whatsappbot",
-    skills: ["Node.js", "Javascript"],
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ullam aspernatur, a ipsum tempore ab adipisci perspiciatis eligendi odio quas corrupti? Maxime, eveniet veniam earum doloremque vero asperiores tempora numquam.",
+    target: "",
+    title: "Asset Management",
+    image: "images/asset/login.png",
+    link: "/project/asset",
+    skills: ["PHP", "Javascript", "CodeIgniter", "Bootstrap"],
+    desc: "Website ini dirancang untuk membantu pengelolaan aset secara menyeluruh, mulai dari proses pengadaan, penempatan, hingga pemeliharaan aset. Sistem ini memudahkan pelacakan transaksi aset dan memastikan pengelolaan inventaris yang lebih efisien, transparan, dan terdokumentasi dengan baik.",
   },
   {
+    target: "blank",
     title: "Portfolio",
-    image: "/images/example.png",
-    link: "https://github.com/jswikarta/whatsappbot",
+    image: "images/portfolio.png",
+    link: "https://jswikarta.github.io/portfolio",
     skills: ["Node.js", "Typescript", "React", "Tailwind"],
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ullam aspernatur, a ipsum tempore ab adipisci perspiciatis eligendi odio quas corrupti? Maxime, eveniet veniam earum doloremque vero asperiores tempora numquam.",
+    desc: "Website portfolio responsif yang dibangun dengan React, TypeScript, dan Tailwind CSS. Menampilkan informasi pribadi, proyek, dan kontak dengan desain modern dan navigasi yang smooth. Fokus pada komponen reusable, struktur kode yang rapi, dan tampilan yang mobile-friendly.",
+  },
+  {
+    target: "blank",
+    title: "Whatsapp Bot",
+    image: "images/whatsappbot.png",
+    link: "https://github.com/jswikarta/whatsappbot",
+    skills: ["Node.js", "Javascript"],
+    desc: "Proyek ini merupakan implementasi bot WhatsApp yang dirancang untuk mengotomatisasi interaksi dengan pengguna melalui platform WhatsApp. Bot ini mampu merespons pesan secara real-time, menyediakan informasi, menjalankan perintah tertentu, serta terintegrasi dengan API Digiflazz untuk proses transaksi jual beli produk digital.",
   },
 ];
 
 export default function Home() {
   return (
     <>
-      <div className="md:pr-[5%] md:pl-[40%]">
-        <About />
+      <div className="bg-[#0e162a]">
+        <Sidebar />
+        <div className="md:pr-[5%] md:pl-[40%]">
+          <About />
 
-        <section id="experience">
-          <div className="ml-2 font-semibold text-[#cfd9ee] md:hidden">
-            EXPERIENCE
-          </div>
-          <div className="flex flex-col flex-wrap items-center justify-center gap-4 pb-12">
-            {experiences.map((i, index) => (
-              <div key={index}>
-                <Experience experienceData={i} />
-              </div>
-            ))}
-          </div>
-        </section>
+          <section id="experience">
+            <div className="ml-2 font-semibold text-[#cfd9ee] md:hidden">
+              EXPERIENCE
+            </div>
+            <div className="flex flex-col flex-wrap items-center justify-center gap-4 pb-12">
+              {experiences.map((i, index) => (
+                <div key={index}>
+                  <Experience experienceData={i} />
+                </div>
+              ))}
+            </div>
+          </section>
 
-        <section id="projects">
-          <div className="ml-2 font-semibold text-[#cfd9ee] md:hidden">
-            EXPERIENCE
-          </div>
-          <div className="flex flex-col flex-wrap items-center justify-center gap-4 pb-12">
-            {projects.map((i, index) => (
-              <div key={index}>
-                <Project projectData={i} />
-              </div>
-            ))}
-          </div>
-        </section>
+          <section id="projects">
+            <div className="ml-2 font-semibold text-[#cfd9ee] md:hidden">
+              EXPERIENCE
+            </div>
+            <div className="flex flex-col flex-wrap items-center justify-center gap-4 pb-12">
+              {projects.map((i, index) => (
+                <div key={index}>
+                  <Project projectData={i} />
+                </div>
+              ))}
+            </div>
+          </section>
+        </div>
       </div>
     </>
   );

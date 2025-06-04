@@ -1,6 +1,7 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 const link = [
   {
@@ -42,11 +43,34 @@ export default function Sidebar() {
             </ul>
           </div>
           <div className="mt-6 md:mt-auto">
-            <a href="" target="_blank">
+            <a
+              href="https://github.com/jswikarta"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <GitHubIcon className="h-8 w-8 text-[#94a3b8]" />
             </a>
-            <LinkedInIcon className="ml-2 h-8 w-8 text-[#94a3b8]" />
-            <InstagramIcon className="ml-2 h-8 w-8 text-[#94a3b8]" />
+            <a
+              href="http://wa.me/6281316658899"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <WhatsAppIcon className="ml-2 h-8 w-8 text-[#94a3b8]" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/johan-saka-wikarta-a8a3b9277"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkedInIcon className="ml-2 h-8 w-8 text-[#94a3b8]" />
+            </a>
+            <a
+              href="http://instagram.com/jswikarta"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <InstagramIcon className="ml-2 h-8 w-8 text-[#94a3b8]" />
+            </a>
           </div>
         </div>
       </div>
