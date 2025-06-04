@@ -5,16 +5,11 @@ import Asset from "../pages/asset/Asset";
 const router = createBrowserRouter([
   {
     path: "/dportfolio",
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/project/asset",
-        element: <Asset />,
-      },
-    ],
+    element: <Home />,
+  },
+  {
+    path: "/dportfolio/project/asset",
+    element: <Asset />,
   },
 ]);
 
