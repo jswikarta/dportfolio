@@ -4,37 +4,37 @@ import KeyboardBackspaceOutlinedIcon from "@mui/icons-material/KeyboardBackspace
 const assetDetail = [
   {
     name: "Halaman Login",
-    image: "/images/asset/login.png",
+    image: "images/asset/login.png",
     description:
       "Silakan masuk dengan Username & Password Anda untuk mengakses sistem danmemanfaatkan seluruh fitur yang tersedia.",
   },
   {
     name: "Dashboard",
-    image: "/images/asset/dashboard.png",
+    image: "images/asset/dashboard.png",
     description:
       "Pada halaman ini anda dapat melihat rekap transaksi pengadaan, penempatan & maintain asset pada bulan ini.",
   },
   {
     name: "Menu Master Data",
-    image: "/images/asset/data.png",
+    image: "images/asset/data.png",
     description:
       "Pada Menu Master Data anda dapat melihat seluruh listmaster data yang telah terdaftar di sistem, mulai dari master data asset habis pakai, asset tak habis pakai, data pengguna, data unit dan data supplier.",
   },
   {
     name: "Menu Transaksi",
-    image: "/images/asset/transaksi.png",
+    image: "images/asset/transaksi.png",
     description:
       "Pada Menu Transaksi anda dapat melakukan proses transaksi pengadaan/pembelian asset, penempatan asset dan maintain asset",
   },
   {
     name: "Menu Stok",
-    image: "/images/asset/stok.png",
+    image: "images/asset/stok.png",
     description:
       "Pada Menu Stok anda dapat melihat detail stok setiap asset di setiap unit dan juga stok yang terdapat di sapra/gudang.",
   },
   {
     name: "Menu Laporan",
-    image: "/images/asset/laporan.png",
+    image: "images/asset/laporan.png",
     description:
       "Pada Menu laporan anda dapat melihat detail laporan transaksi yang telah dijalankan dalam sistem.",
   },
