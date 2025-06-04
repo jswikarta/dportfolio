@@ -78,7 +78,7 @@ export default function Home() {
 
           <section id="projects">
             <div className="ml-2 font-semibold text-[#cfd9ee] md:hidden">
-              EXPERIENCE
+              PROJECT
             </div>
             <div className="flex flex-col flex-wrap items-center justify-center gap-4 pb-12">
               {projects.map((i, index) => (
