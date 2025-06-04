@@ -19,7 +19,7 @@ export default function Project({ projectData }: Promps) {
           <img
             src={projectData.image}
             alt=""
-            className="mt-1 ml-2 h-36 w-auto rounded-sm border transition-all duration-200 group-hover:border-[#0e162a] md:h-16 md:w-32"
+            className="mt-1 ml-2 h-36 w-auto rounded-sm border border-gray-100/50 transition-all duration-200 group-hover:border-gray-100 md:h-16 md:w-32"
           />
 
           <div className="mt-2 ml-2 flex flex-col md:mt-0 md:ml-4">
@@ -54,7 +54,7 @@ export default function Project({ projectData }: Promps) {
           <img
             src={projectData.image}
             alt=""
-            className="mt-1 ml-2 h-36 w-auto rounded-sm border transition-all duration-200 group-hover:border-gray-100 md:h-16 md:w-32"
+            className="mt-1 ml-2 h-36 w-auto rounded-sm border border-gray-100/50 transition-all duration-200 group-hover:border-gray-100 md:h-16 md:w-32"
           />
 
           <div className="mt-2 ml-2 flex flex-col md:mt-0 md:ml-4">
